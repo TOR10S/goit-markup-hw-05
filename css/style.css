@@ -567,11 +567,29 @@ span {
 }
 
 .modal-open {
+    position: absolute;
     width: 24px;
     height: 24px;
     background-color: #E7E9FC;
     border-radius: 50%;
     border: 1px solid #0000001A;
+    top: 24px;
+    right: 24px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+    transition:  border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-open:hover {
+    background-color: #404bbf;
+    border: none;
+}
+
+.btn-icon {
+    transition:  fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-open:hover .btn-icon {
+    fill: #FFFFFF;
 }
 
 .modal-input-wrap {
@@ -584,7 +602,7 @@ span {
     border-radius: 4px;
     height: 40px;
     padding-left: 38px;
-    transition: box-shadow 300ms linear;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-field {
@@ -606,7 +624,7 @@ span {
     left: 16px;
     top: 50%;
     transform: translateY(-50%);
-    transition: fill 300ms linear;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-label {
@@ -623,7 +641,8 @@ span {
     line-height: 1.5;
     letter-spacing: 0.02em;
     text-align: center;
-    margin-bottom: 16px
+    margin-bottom: 16px;
+    margin-top: 48px;
 }
 
 .modal-text {
@@ -632,7 +651,7 @@ span {
     width: 100%;
     height: 120px;
     padding: 8px 16px;
-    transition: fill 300ms linear;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-text::placeholder {
@@ -646,3 +665,33 @@ color: rgba(46, 47, 66, 0.4);
 .modal-text:focus {
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
+
+.modal-button {
+    background-color: #4D5AE5;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    border-radius: 4px;
+    margin-left:  auto;
+    margin-right: auto;
+    margin-top: 24px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-button:hover {
+    background-color: #404BBF;
+}
+
+.modal-button:focus {
+    background-color: #404BBF;
+}
+
