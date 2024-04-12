@@ -752,9 +752,7 @@ color: rgba(46, 47, 66, 0.4);
 }
 
 .checkbox-text {
-    display: flex;
-    align-items: center;
-    gap: 8px;
+    
 }
 
 .check-icon {
