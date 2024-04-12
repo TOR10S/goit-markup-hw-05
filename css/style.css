@@ -833,3 +833,8 @@ color: rgba(46, 47, 66, 0.4);
 .modal-link {
     color: #4d5ae5;;
 }
+
+.footer-form {
+    display: flex;
+    gap: 24px;
+}
