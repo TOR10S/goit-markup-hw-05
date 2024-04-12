@@ -549,6 +549,7 @@ span {
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-open {
@@ -568,7 +569,7 @@ span {
     transform: translate(-50%, -50%);
     padding: 72px 24px 24px 24px;
     box-shadow:  1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-open {
@@ -668,6 +669,7 @@ span {
     letter-spacing: 0.02em;
     text-align: center;
     margin-bottom: 16px;
+    color:  #2E2F42;
 }
 
 .modal-text {
@@ -762,7 +764,7 @@ color: rgba(46, 47, 66, 0.4);
 .modal-checkbox:checked + .checkbox-view {
     background-color: #404bbf;
     border: none;
-    fill: #f4f4fd;
+    fill: #F4F4FD;
 }
 
 .footer-subscribe-input {
